@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predefined Method in Javascript </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Case:1 Finding Length
+        console.log("Finding Length")
+        var array = [69, 39, 55, 22, 36, 66];
+        console.log(array);
+        console.log(array.length);
+
+        // Case:2 Adding two Numbers At The End of An Array Using "push" Method
+        console.log("Adding two Numbers At The End of An Array Using push Method");
+        var array1 = [69, 39, 55, 22, 36, 66];
+        console.log(array1.push(62));
+        console.log(array1);
+
+        // Case:3 Adding three Number of Starting Of Array Using "unshift" Method
+        console.log("Adding one Number of Starting Of Array Using unshift Method");
+        var array2 = [69, 39, 55, 22];
+        console.log(array2.unshift(62));
+        console.log(array2);
+
+        // / Case:4 Deleting one Numbers At The End of An Array Using "pop" Method 
+        console.log("Deleting one Numbers At The End of An Array Using pop Method ");
+        var array3 = [69, 39, 55, 22];
+        console.log(array3.pop());
+        console.log(array3);
+
+        // Case:4 Deleting one Numbers At The Starting of An Array Using "shift" Method 
+        console.log("Deleting one Number At The Starting of An Array shift of An Array Using pop Method ");
+        var array4 = [69, 39, 55, 22];
+        console.log(array4.shift());
+        console.log(array4);
+
+        // Case:5 Deleting  & Addigng One OR More number Using "splice" Method
+        console.log("Deleting  & Adding One OR More number Using splice Method");
+        var array4 = [69, 39, 55, 22];
+        console.log(array4.splice(1, 2, 2));
+        console.log(array4);
+
+
+        // Case:5 Using Join Method
+        console.log("Using Join Method");
+        var array6 = [69, 39, 55, 22];
+        console.log(array6.join(2));
+        // console.log(array5);
+    </script>
+</body>
+
+</html>
