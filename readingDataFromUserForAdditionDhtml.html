@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Data From User For Addition</title>
+</head>
+<style type="text/css">
+    ul {
+        border: 1px solid black;
+        margin: 10px auto;
+        padding: 10px;
+        width: 400px;
+        background: salmon;
+    }
+    
+    li {
+        list-style: none;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+        background: yellow;
+    }
+    
+    .resultBlock {
+        display: none;
+    }
+</style>
+
+<body>
+    <ul>
+        <li>
+            Enter The 1st Value Here <input type="text" id="fVal">
+        </li>
+        <li>
+            Enter The 2nd Value Here <input type="text" id="sVal">
+        </li>
+        <li>
+            <input type="button" value="add" onclick="addValues();">
+        </li>
+        <li class="resultBlock">
+            The Sum Of Two Number Is
+            <span id="rBlock">...</span>
+        </li>
+    </ul>
+    <script>
+        var addValues = () => {
+            var a1 = document.querySelector("#fVal").value;
+            a1 = parseInt(a1);
+            var a2 = document.querySelector("#sVal").value;
+            a2 = parseInt(a2);
+            var result = a1 + a2;
+            document.querySelector("#rBlock").innerHTML = result;
+            document.querySelector(".resultBlock").style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
